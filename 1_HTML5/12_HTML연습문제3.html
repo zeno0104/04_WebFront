@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .info {
+        display: flex;
+        justify-content: space-between;
+      }
+      .labelInfo {
+        font-weight: bold;
+        display: block;
+        width: 147px;
+        text-align: center;
+      }
+      .userInfo {
+        width: 390px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      .inputInfo {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>회원 가입</h1>
+      <form>
+        <div>
+          <fieldset>
+            <legend>필수 입력 정보</legend>
+            <div class="userInfo">
+              <div class="info">
+                <div>
+                  <label for="id" class="labelInfo">ID</label>
+                </div>
+                <div style="display: flex; flex: 1">
+                  <div style="flex: 1">
+                    <input
+                      type="text"
+                      name="id"
+                      placeholder="아이디 10글자 이내"
+                      id="id"
+                    />
+                  </div>
+                  <div>
+                    <button type="button">중복 확인</button>
+                  </div>
+                </div>
+              </div>
+              <div class="info">
+                <label for="pw" class="labelInfo">비밀번호</label>
+                <input
+                  type="password"
+                  name="pw"
+                  id="pw"
+                  placeholder="영문, 숫자, 특수문자 포함 8자 이상"
+                  style="flex: 1"
+                />
+              </div>
+              <div class="inputInfo">
+                <label for="pwCheck" class="labelInfo">비밀번호 확인</label>
+                <input
+                  type="password"
+                  name="pwCheck"
+                  id="pwCheck"
+                  style="flex: 1"
+                />
+              </div>
+              <div class="info">
+                <div>
+                  <label for="email" class="labelInfo">Email</label>
+                </div>
+                <div class="inputInfo" style="gap: 5px">
+                  <input type="email" id="email" name="email" />
+                  <select name="emailType" style="flex: 1">
+                    <option>직접입력</option>
+                    <option>@naver.com</option>
+                    <option>@google.com</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <legend>추가 정보</legend>
+            <div style="display: flex; flex-direction: column; gap: 20px">
+              <div>프로필 사진 <input type="file" name="file" /></div>
+              <div>
+                성별 : <input type="radio" name="gender" value="남자" /> 남자
+                <input type="radio" name="gender" value="여자" /> 여자
+              </div>
+              <div>생년월일 : <input type="date" name="year" /></div>
+              <div>
+                <span style="display: block">취미</span>
+                <div>
+                  <input type="checkbox" name="hobby" value="야구" />
+                  야구<input type="checkbox" name="hobby" value="농구" />
+                  농구<input type="checkbox" name="hobby" value="축구" />
+                  축구
+                </div>
+                <div>
+                  <input type="checkbox" name="hobby" value="공부" />
+                  공부<input type="checkbox" name="hobby" value="음악감상" />
+                  음악감상
+                </div>
+                <div>
+                  <input type="checkbox" name="hobby" value="others" /> 기타
+                  <input type="text" name="hobby" name="others" />
+                </div>
+              </div>
+
+              <span style="display: block">자기소개</span>
+              <textarea
+                name="introduce"
+                style="resize: none; width: 500px; height: 200px"
+              ></textarea>
+            </div>
+          </fieldset>
+        </div>
+        <button>회원가입</button>
+        <button type="reset">다시입력</button>
+        <button>이전으로</button>
+      </form>
+    </div>
+  </body>
+</html>

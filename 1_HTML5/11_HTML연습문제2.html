@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .userInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .btn {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div>
+        <div>
+          <fieldset>
+            <legend>남품자 정보</legend>
+            <div class="userInfo">
+              <div>
+                <label for="name">1. 납품자명 : </label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <div>
+                <label for="email">2. email : </label>
+                <input
+                  type="email"
+                  placeholder="answer@naver.com"
+                  id="email"
+                  name="email"
+                />
+              </div>
+              <div>
+                <label for="url">3. 홈페이지 : </label>
+                <input type="url" id="url" name="url" value="http://" />
+              </div>
+              <div>
+                <label for="area">4. 지역 : </label>
+                <input type="text" name="area" id="area" />
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <legend>남품 정보</legend>
+            <div>
+              <ul>
+                <li>상품명 : <input type="text" name="productName" /></li>
+              </ul>
+              <ul>
+                <li>
+                  납품수량 :
+                  <input
+                    type="range"
+                    step="10"
+                    min="100"
+                    max="200"
+                    name="count"
+                  />
+                </li>
+              </ul>
+              <ul>
+                <li>납품등급 : <input type="number" name="p_grade" /></li>
+              </ul>
+              <ul>
+                <li>기타사항 : <textarea name="others"></textarea></li>
+              </ul>
+            </div>
+          </fieldset>
+        </div>
+        <button class="btn">send message</button>
+      </div>
+    </form>
+  </body>
+</html>
