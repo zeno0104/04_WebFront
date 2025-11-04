@@ -51,25 +51,35 @@
             <legend>남품 정보</legend>
             <div>
               <ul>
-                <li>상품명 : <input type="text" name="productName" /></li>
+                <li>
+                  <label for="p_name">상품명 : </label
+                  ><input type="text" name="productName" id="p_name" />
+                </li>
               </ul>
               <ul>
                 <li>
-                  납품수량 :
+                  <label for="count">납품수량 :</label>
                   <input
                     type="range"
                     step="10"
                     min="100"
                     max="200"
                     name="count"
+                    id="count"
                   />
                 </li>
               </ul>
               <ul>
-                <li>납품등급 : <input type="number" name="p_grade" /></li>
+                <li>
+                  <label for="grade">납품등급 : </label
+                  ><input type="number" name="p_grade" id="grade" />
+                </li>
               </ul>
               <ul>
-                <li>기타사항 : <textarea name="others"></textarea></li>
+                <li>
+                  <label for="others">기타사항</label
+                  ><textarea name="others" id="others"></textarea>
+                </li>
               </ul>
             </div>
           </fieldset>

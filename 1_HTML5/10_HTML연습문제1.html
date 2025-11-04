@@ -50,9 +50,18 @@
         <fieldset>
           <legend>피자 사이즈</legend>
           <div class="info">
-            <div><input type="radio" name="size" value="Small" /> Small</div>
-            <div><input type="radio" name="size" value="Medium" /> Medium</div>
-            <div><input type="radio" name="size" value="Large" /> Large</div>
+            <div>
+              <input type="radio" name="size" value="Small" id="small" />
+              <label for="small">Small</label>
+            </div>
+            <div>
+              <input type="radio" name="size" value="Medium" id="medium" />
+              <label for="medium">Medium</label>
+            </div>
+            <div>
+              <input type="radio" name="size" value="Large" id="large" />
+              <label for="large">Large</label>
+            </div>
           </div>
         </fieldset>
       </div>
@@ -62,19 +71,32 @@
           <legend>토핑 선택</legend>
           <div class="info">
             <div>
-              <input type="checkbox" name="toping" value="베이컨" /> 베이컨
+              <input type="checkbox" name="toping" value="베이컨" id="bacon" />
+              <label for="bacon">베이컨</label>
             </div>
-            <div><input type="checkbox" name="toping" value="치즈" /> 치즈</div>
-            <div><input type="checkbox" name="toping" value="양파" /> 양파</div>
-            <div><input type="checkbox" name="toping" value="버섯" /> 버섯</div>
+            <div>
+              <input type="checkbox" name="toping" value="치즈" id="cheese" />
+              <label for="cheese">치즈</label>
+            </div>
+            <div>
+              <input type="checkbox" name="toping" value="양파" id="onion" />
+              <label for="onion">양파</label>
+            </div>
+            <div>
+              <input type="checkbox" name="toping" value="버섯" id="mushroom" />
+              <label for="mushroom">버섯</label>
+            </div>
           </div>
         </fieldset>
       </div>
       <div class="delivery">
-        <div>희망배송시간 : <input type="time" name="time" /></div>
         <div>
-          배송시 요청사항 :
-          <textarea name="optin"></textarea>
+          <label for="time">희망배송시간 : </label
+          ><input type="time" name="time" id="time" />
+        </div>
+        <div>
+          <label for="others">배송시 요청사항 :</label>
+          <textarea name="option" id="others"></textarea>
         </div>
       </div>
 
