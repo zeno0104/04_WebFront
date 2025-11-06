@@ -1,0 +1,104 @@
+.area1 {
+  background-color: red;
+}
+.area2 {
+  background-color: orange;
+}
+.area3 {
+  background-color: yellow;
+}
+.area4 {
+  background-color: green;
+}
+.area5 {
+  background-color: blue;
+}
+
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+  width: 150px;
+  height: 150px;
+}
+.inline-block {
+  display: inline-block;
+}
+/* 감싸는 영역 요소 */
+#container-1 {
+  border: 3px solid #000;
+  width: 323px;
+  height: 472px;
+}
+
+#container-1 > div {
+  border: 1px dashed hotpink;
+  height: 50%;
+}
+
+#container-1 > div:first-of-type {
+  height: 30%;
+}
+
+#container-1 > div:last-of-type {
+  height: 70%;
+  background-color: blue;
+}
+
+#container-2 {
+  width: 300px;
+  height: 440px;
+  border: 3px solid #000;
+}
+
+/* block 형식의 요소는
+별도의 width가 지정되지 않으면 
+항상 부모요소의 100% 차지 */
+
+.container-2 > div {
+  border: 1px dashed green;
+}
+#container-2 > .div-2:nth-of-type(1) {
+  height: 20%;
+  background-color: rgb(150, 165, 120);
+}
+#container-2 > .div-2:nth-of-type(2) {
+  height: 30%;
+  background-color: green;
+}
+#container-2 > .div-2:nth-of-type(3) {
+  height: 50%;
+  background-color: yellowgreen;
+}
+
+#container-3 {
+  width: 400px;
+  height: 200px;
+  border: 1px solid red;
+}
+
+.div-3 {
+  width: 50%;
+  height: 100%;
+  /* display: inline-block; */
+}
+
+.div-3:first-of-type {
+  background-color: red;
+}
+.div-3:last-of-type {
+  background-color: green;
+}
+
+.div-4 {
+  border: 3px solid black;
+  height: 100px;
+}
+
+#test4 {
+  background-color: deeppink;
+  /* display: none; */
+  visibility: hidden;
+}
