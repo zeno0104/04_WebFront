@@ -1,0 +1,39 @@
+.container {
+  width: 800px;
+  height: 500px;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.header,
+.footer {
+  flex: 1;
+  background-color: #008000;
+}
+.body {
+  flex: 3;
+  display: flex;
+}
+
+.item1 {
+  flex: 1;
+  background-color: #ffff00;
+}
+.item2 {
+  flex: 2;
+  display: flex;
+  background-color: #ffa500;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.item2Content {
+  background-color: #ff0000;
+  width: 150px;
+  height: 150px;
+}
+
+.item {
+  border: 1px solid #000;
+}

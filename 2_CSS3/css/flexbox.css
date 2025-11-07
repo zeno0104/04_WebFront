@@ -144,6 +144,7 @@ div {
   height: 80px;
   background-color: red;
 }
+
 /* (자식 요소 속성)
 order : 기본값 0;
 양수 ~ 음수 설정 가능
@@ -152,7 +153,7 @@ order : 기본값 0;
 
 */
 
-.order:nth-child(1) {
+/* .order:nth-child(1) {
   order: 3;
 }
 .order:nth-child(2) {
@@ -160,4 +161,110 @@ order : 기본값 0;
 }
 .order:nth-child(3) {
   order: 5;
+} */
+
+/* item(자식)에게 주는 flex 속성 */
+
+/* 
+flex-basis : item의 기본 크기를 결정하는 속성
+부모를 기준으로 자식이 얼마만큼 점유하겠는가?
+width와 비슷하지만, flex-grow, flex-shirink에 의해
+유동적으로 변경될 수 있음.
+
+flex-basis : auto: (기본값)
+-> 요소 본래의 크기만큼을 가짐 (75 x 75)
+flex-basis: 0;
+-> 본래 요소의 크기 중  content 만을 남겨두고
+차지하는 영역 없음
+
+*/
+/* 메인축(default인 가로, 만약 flex-direction을 column이면 
+세로쪽으로 값이 반영됌) 방향으로 부모의 20%만큼 차지하겠다는 것 */
+.basis-20 {
+  flex-basis: 20%;
+}
+.basis-30 {
+  flex-basis: 10%;
+}
+.basis-50 {
+  flex-basis: 50%;
+}
+
+/* flex-grow */
+/* 0이 기본값이다.
+즉, 요소가 추가적인 가용공간을 차지하지 않음.
+자신의 초기 크기만 유지
+설정값은 여백의 비율로 작성하고 적용됨
+*/
+.grow1 {
+  flex-grow: 0;
+}
+.grow2 {
+  flex-grow: 2;
+}
+.grow3 {
+  flex-grow: 1;
+}
+
+/* 
+flex-basis는 부모의 크기에 따른 설정된 비율만 차지
+flex-grow는 부모의 크기 비율에 따라 잉여공간까지 다 차지
+=> 나머지를 다 차지하냐 안하냐 그차이!
+*/
+
+/* flex-shirink 
+flex-shirink: 1; (기본값)
+컨테이너의 크기가 줄어들면
+다른 요소들(자식요소)과 함께 비율적으로
+축소될 수 있음을 의미
+*/
+.shrink1 {
+  flex-shrink: 0;
+  /* 줄어들지 않음 
+  (컨테이너의 공간이 부족해도 보인의 원래 크기 유지)
+  */
+}
+.shrink2 {
+  flex-shrink: 1;
+}
+.shrink3 {
+  flex-shrink: 2;
+  /* flex-shrink: n 
+  -> n값 비율대로 줄어든다
+  */
+}
+
+/* flex: 
+Flexbox 내에서 아이템의 크기와 비율을 설정하는 속성
+*/
+
+.flex-test1 {
+  flex: 1;
+  /* 
+  flex-grow: 1;
+  => 남은 가용공간을 1 비율로 차지
+  flex-shrink: 1;
+  => 컨테이너 크기가 부족할 때 줄어들면 1비율로 축소
+
+  flex-basis: 0;
+  => 요소의 content만 차지
+  */
+}
+.flex-test2 {
+  flex: 1 0 auto;
+  /* 
+  flex-grow: 1; flex-shrink: 0; flex-basis: auto;
+  -> 가용공간 1비율로 차지,
+  축소되지 않음(본인 크기 유지),
+  기본 크기가 auto(본인 요소 원래크기)
+  */
+}
+.flex-test3 {
+  flex: 1 50%;
+  /* 
+  flex-grow: 1; flex-shrink: 1; flex-basis: 50%;
+  -> 가용공간을 1비율로 차지,
+  컨테이너 크기가 줄어들면 1 비율로 축소,
+  기본 점유율이 50%
+  */
 }

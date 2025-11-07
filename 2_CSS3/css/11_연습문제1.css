@@ -1,0 +1,63 @@
+/* .container {
+  display: flex;
+  width: 100%;
+  border: 1px solid #000;
+  height: 400px;
+}
+.item {
+  border: 1px solid #000;
+}
+
+.item1 {
+  background-color: #87ceeb;
+  flex: 2;
+}
+.item2 {
+  background-color: #ff6347;
+  flex: 3;
+}
+.item3 {
+  background-color: #faebd7;
+  flex: 1;
+} */
+
+/* 문제 1 */
+.container-1 {
+  width: 800px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black; /* 컨테이너 확인용 */
+}
+
+.header-1,
+.footer-1 {
+  flex-basis: 20%;
+  background-color: gray;
+}
+
+.body-1 {
+  flex-basis: 60%; /* 자식 전용 */
+
+  display: flex; /* 부모 전용 */
+  /* 
+  body-1 은
+  container-1의 자식요소이면서
+  body-item 요소들의 부모요소이기도 함.
+  */
+}
+.body-item {
+  border: 1px solid #000;
+}
+.body-item:nth-child(1) {
+  flex: 2;
+  background-color: #87ceeb;
+}
+.body-item:nth-child(2) {
+  flex: 3;
+  background-color: #ff6347;
+}
+.body-item:nth-child(3) {
+  flex: 1;
+  background-color: #faebd7;
+}
