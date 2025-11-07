@@ -8,36 +8,36 @@
 .item {
   border: 1px solid #000;
 }
-.itemContainer1 {
+.item_container1 {
   flex: 2;
   background-color: #ffff00;
 }
-.itemContainer2 {
+.item_container2 {
   display: flex;
   flex: 4;
 }
-.itemInner1 {
+.item_inner1 {
   flex: 1;
   background-color: #87ceeb;
 }
-.itemInner2 {
+.item_inner2 {
   display: flex;
   flex: 2;
   flex-direction: column;
 }
-.itemContainerInner1 {
+.item_container_inner1 {
   flex: 1;
   display: flex;
 }
-.itemI1 {
+.item_i1 {
   flex: 2;
   background-color: #7fffd4;
 }
-.itemI2 {
+.item_i2 {
   flex: 1;
   background-color: #ff4500;
 }
-.itemContainerInner2 {
+.item_container_inner2 {
   flex: 1;
   background-color: #ff00ff;
 }

@@ -18,20 +18,20 @@
   display: flex;
   flex: 3;
 }
-.item2Content {
+.item2_content {
   background-color: #ffff00;
   flex: 1;
 }
-.item2Content2 {
+.item2_content2 {
   display: flex;
   flex-direction: column;
   flex: 2;
 }
-.item2CotnentInner1 {
+.item2_cotnent_inner1 {
   background-color: #adff2f;
   flex: 3;
 }
-.item2ContentInner2 {
+.item2_content_inner2 {
   background-color: #0000ff;
   flex: 1;
 }
