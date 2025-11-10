@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/youtubeClone.css" />
+    <script
+      src="https://kit.fontawesome.com/8fe87ba287.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <section>
+        <div><i class="fa-solid fa-bars"></i></div>
+        <div id="yb_logo">
+          <i class="fa-brands fa-youtube"></i>
+          <span id="premium_txt">Premium</span> <span id="kr">KR</span>
+        </div>
+      </section>
+      <section id="search">
+        <form action="#" method="get" id="search_form">
+          <fieldset>
+            <div>
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <div><input type="text" placeholder="검색" /></div>
+            </div>
+            <div>
+              <button><i class="fa-solid fa-keyboard"></i></button>
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </fieldset>
+          <div><i class="fa-solid fa-microphone"></i></div>
+        </form>
+      </section>
+      <section id="make_video">
+        <a href="#">+ 만들기</a>
+        <div><i class="fa-solid fa-bell"></i></div>
+      </section>
+    </header>
+    <!-- main -->
+    <main>
+      <section id="content">
+        <section id="video">
+          <div>
+            <iframe
+              width="560"
+              height="1000"
+              src="https://www.youtube.com/embed/TCARNviBARw?si=l_-YadWA3iYTLPpR"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div>
+            <p>
+              고막 녹이는 달달한 모달 음색👂 49호 '소수빈' 무대 모아보기🎵 |
+              싱어게인3 | JTBC 240104 방송 외
+            </p>
+          </div>
+          <section id="c_info">
+            <section>
+              <img src="../images/c_logo.jfif" alt="" id="c_logo" />
+            </section>
+            <section>
+              <span class="c_name">JTBC Voyage</span>
+              <span class="sub_info">구독자 461만명</span>
+            </section>
+            <section><button>구독</button></section>
+          </section>
+          <section id="video_info">
+            <section id="list_info_container">
+              <ul id="list_info_text">
+                <li>
+                  <span id="views_info">조회수 171만회 1년 전</span>
+                  <span>#싱어게인3</span><span>#소수빈</span>
+                </li>
+                <li>
+                  <a href="#">02:43</a><span id="v_bar">|</span
+                  ><span>가잖아</span>
+                </li>
+                <li>
+                  <a href="#">05:56</a><span id="v_bar">|</span
+                  ><span>혼자만의 느낌</span>
+                </li>
+                <li>
+                  <a href="#">09:01</a><span id="v_bar">|</span
+                  ><span>기대어 앉은 오후에는</span>
+                </li>
+                <li>
+                  <a href="#">12:09</a><span id="v_bar">|</span
+                  ><span>넌 쉽게 말했지만 ... 더보기</span>
+                </li>
+              </ul>
+            </section>
+          </section>
+          <section id="comment_info">
+            <section>
+              <p>댓글 1,688개</p>
+              <div>
+                <img src="../images/sort_bar.png" alt="" />
+                <p>정렬 기준</p>
+              </div>
+            </section>
+            <section>
+              <section>
+                <input
+                  type="text"
+                  id="add_comment"
+                  placeholder="댓글 추가..."
+                />
+              </section>
+            </section>
+            <section id="comment">
+              <section>
+                <div><img src="../images/짱구_배경.jfif" alt="" /></div>
+                <div>
+                  <div>
+                    <p id="userId">@짱구오뽜</p>
+                    <p id="user_comment">
+                      개인적으로 싱어게인 전시즌 통틀어 촤고인거 같다
+                    </p>
+                  </div>
+                  <div id="detail_info">
+                    <div>
+                      <i class="fa-regular fa-thumbs-up"></i> <span>3.5천</span>
+                    </div>
+                    <i class="fa-regular fa-thumbs-down"></i> <span>답글</span>
+                  </div>
+                </div>
+              </section>
+              <section><i class="fa-solid fa-ellipsis-vertical"></i></section>
+            </section>
+            <section id="comment">
+              <section>
+                <div><img src="../images/철수.jfif" alt="" /></div>
+                <div>
+                  <div>
+                    <p id="userId">@철수오뽜</p>
+                    <p id="user_comment">
+                      우승이고 나발이고 중요치 않음.....그냥 최고의 발라더
+                    </p>
+                  </div>
+                  <div id="detail_info">
+                    <div>
+                      <i class="fa-regular fa-thumbs-up"></i> <span>1.3천</span>
+                    </div>
+                    <i class="fa-regular fa-thumbs-down"></i> <span>답글</span>
+                  </div>
+                </div>
+              </section>
+              <section><i class="fa-solid fa-ellipsis-vertical"></i></section>
+            </section>
+            <section id="comment">
+              <section>
+                <div><img src="../images/유리.jfif" alt="" /></div>
+                <div>
+                  <div>
+                    <p id="userId">@유리누님</p>
+                    <p id="user_comment">
+                      우승하든 아니든 더이상 의미 없어짐. 경연자가 아니라
+                      보컬리스트로 이미 내 맘속에 받아들였고 팬이 되어 버렸어..
+                      온리 가창만으로 이렇게 중독되긴 처음
+                    </p>
+                  </div>
+                  <div id="detail_info">
+                    <div>
+                      <i class="fa-regular fa-thumbs-up"></i> <span>6.8천</span>
+                    </div>
+                    <i class="fa-regular fa-thumbs-down"></i> <span>답글</span>
+                  </div>
+                </div>
+              </section>
+              <section><i class="fa-solid fa-ellipsis-vertical"></i></section>
+            </section>
+          </section>
+        </section>
+        <section id="other_video">
+          <section id="select_menu">
+            <p>모두</p>
+            <p>시리즈</p>
+            <p>JTBC Voyage 제공</p>
+            <p>소수빈</p>
+            <p id="video_next_btn">></p>
+          </section>
+          <section id="all_video">
+            <section>
+              <div>
+                <img
+                  src="../images/소수빈_한번만더.jfif"
+                  alt="소수빈_한번만더"
+                />
+              </div>
+              <div>
+                <p>
+                  소수빈이 들려주는 마지막 '쉬운' 노래 〈한번만 더〉♪ |
+                  싱어게인3 13회 | JTBC 240118 방송
+                </p>
+                <div>
+                  <p>조회수 135만회</p>
+                  <p>·</p>
+                  <p>1년 전</p>
+                </div>
+              </div>
+              <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+            </section>
+          </section>
+          <section id="all_video">
+            <section>
+              <div>
+                <img src="../images/소수빈_환생.jfif" alt="소수빈_한번만더" />
+              </div>
+              <div>
+                <p>
+                  달콤하게 물드는 가을밤, 소수빈(So Soo Bin)의 목소리로 들려주는
+                  로맨틱한 가사💓 '환생'♬ ｜비긴어게인 오픈마이크
+                </p>
+                <div>
+                  <p>조회수 16만회</p>
+                  <p>·</p>
+                  <p>1년 전</p>
+                </div>
+              </div>
+              <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+            </section>
+          </section>
+          <section id="all_video">
+            <section>
+              <div>
+                <img
+                  src="../images/소수빈_숙녀에게.jpg"
+                  alt="소수빈_한번만더"
+                />
+              </div>
+              <div>
+                <p>
+                  이렇게 따뜻해도 되나... 몽환적인 꿈같은 목소리★ 소수빈의
+                  〈숙녀에게〉♪ | 유명가수와 길거리 심사단 7회 | JTBC 240424
+                  방송
+                </p>
+                <div>
+                  <p>조회수 118만회</p>
+                  <p>·</p>
+                  <p>1년 전</p>
+                </div>
+              </div>
+              <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+            </section>
+          </section>
+          <section id="all_video">
+            <section>
+              <div>
+                <img
+                  src="../images/소수빈_try_again.jfif"
+                  alt="소수빈_한번만더"
+                />
+              </div>
+              <div>
+                <p>
+                  [싱어게인3] 도입부터 말랑해지는 마음💕 소수빈의 〈Try Again〉♪
+                  | 싱어게인3 11회 | JTBC 240104 방송
+                </p>
+                <div>
+                  <p>조회수 135만회</p>
+                  <p>·</p>
+                  <p>1년 전</p>
+                </div>
+              </div>
+              <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+            </section>
+          </section>
+          <section id="shorts">
+            <section>
+              <img src="../images/shorts.png" alt="" />
+            </section>
+            <section id="shorts_video_list">
+              <section>
+                <section>
+                  <img src="../images/햄찌2.avif" alt="" />
+                </section>
+                <section>
+                  <div>
+                    <div id="shorts_info">
+                      <p id="shorts_title">조삼모사</p>
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                  </div>
+                  <p id="shorts_views">조회수 127만회</p>
+                </section>
+              </section>
+              <section>
+                <section>
+                  <img src="../images/햄찌3.avif" alt="" />
+                </section>
+                <section>
+                  <div>
+                    <div id="shorts_info">
+                      <p id="shorts_title">각축지세</p>
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                  </div>
+                  <p id="shorts_views">조회수 91만회</p>
+                </section>
+              </section>
+              <section>
+                <section>
+                  <img src="../images/햄찌4.avif" alt="" />
+                </section>
+                <section>
+                  <div>
+                    <div id="shorts_info">
+                      <p id="shorts_title">자강두찐</p>
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                  </div>
+                  <p id="shorts_views">조회수 135만회</p>
+                </section>
+              </section>
+            </section>
+            <section id="next_btn"><p>></p></section>
+          </section>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
