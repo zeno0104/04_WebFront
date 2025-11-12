@@ -82,3 +82,13 @@ function cssTest() {
     };
   }
 }
+
+function readValue() {
+  const chattingBg = document.querySelector("#chatting-bg");
+
+  const userInput = document.querySelector("#user-input");
+
+  chattingBg.innerHTML += `<p><span>${userInput.value}</span></p>`;
+  userInput.value = "";
+  chattingBg.scrollTop = chattingBg.scrollHeight;
+}

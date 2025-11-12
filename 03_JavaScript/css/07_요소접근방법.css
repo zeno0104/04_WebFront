@@ -27,3 +27,48 @@
 [target-div="css-div"] > div:last-child {
   background-color: yellow;
 }
+
+.chatting {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+#chatting-bg {
+  background-color: #bacee0;
+  width: 100%;
+}
+
+#chatting-bg > p {
+  text-align: right;
+  margin-right: 20px;
+}
+
+#user-input {
+  width: 90%;
+}
+#chatting-input {
+  display: flex;
+}
+#chatting-input > input {
+  flex-basis: 90%;
+  height: 50px;
+}
+#chatting-input > button {
+  flex-basis: 10%;
+}
+#chatting-input > button {
+  font-size: 10px;
+}
+#chatting-bg > p > span {
+  display: inline-block;
+  background-color: #fee500;
+  padding: 10px;
+  border-radius: 5px;
+}
+#chatting-bg {
+  width: 100%;
+  height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
