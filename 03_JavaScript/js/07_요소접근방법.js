@@ -84,11 +84,50 @@ function cssTest() {
 }
 
 function readValue() {
-  const chattingBg = document.querySelector("#chatting-bg");
+  // 채팅이 출력되는 배경 요소
+  const bg = document.querySelector("#chatting-bg");
 
-  const userInput = document.querySelector("#user-input");
+  // 채팅 내용 입력 input 요소
+  const input = document.querySelector("#user-input");
 
-  chattingBg.innerHTML += `<p><span>${userInput.value}</span></p>`;
-  userInput.value = "";
-  chattingBg.scrollTop = chattingBg.scrollHeight;
+  // 입력된 값이 없을 경우
+  // 1) 진짜 안적음
+  // 2) 공백만 적음
+
+  // 문자열.trim() : 문자열 좌우 공백 제거
+  if (input.value.trim().length === 0) {
+    alert("채팅 내용을 입력해주세요.");
+    input.value = ""; // 이전 input에 작성된 값 삭제
+    input.focus(); // input에 커서 활성화
+    return;
+  }
+  bg.innerHTML += `<p><span>${input.value}</span></p>`;
+  // bg.scrollTop : 현재 스크롤 위치
+  // 스크롤이 현재 얼마만큼 내려와있는지 나타냄
+
+  // bg.scrollHeight : bg의 스크롤 전체 높이
+  // 스크롤바를 이용해 스크롤 할 수 있는 전체 높이
+
+  console.log(bg.scrollTop);
+  console.log(bg.scrollHeight);
+  bg.scrollTop = bg.scrollHeight;
+  input.value = "";
+  input.focus();
+  // scrollTop은 계속 0임
+  // scrollHeight는 채팅수가 늘어날 수록 늘어나는데
+  // 해당 height 값을 top으로 바꿔주면 됌
 }
+
+// keydown : 키가 눌러졌을 때 (+ 꾹 누르고 있으면 계속 인식됨)
+// keyup : 눌려지던 키가 떼어졌을 때 (올라왔을 때) (1회 인식)
+document.querySelector("#user-input").addEventListener("keyup", function (e) {
+  // 매개변수 e : 이벤트 객체 (발생한 이벤트 정보를 담고있는 객체)
+  console.log(e);
+
+  // e['key'] -> 매핑된 value
+  // e.key -> 매핑된 value
+
+  if (e.key === "Enter") {
+    readValue();
+  }
+});
