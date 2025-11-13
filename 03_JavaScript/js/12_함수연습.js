@@ -89,7 +89,7 @@ const calc = (a, b) => {
   console.log(`${a} % ${b} = ${a % b}`);
 };
 const ex11 = (a, b, calc) => {
-  calc(10, 20);
+  calc(a, b);
 };
 ex11(10, 20, calc);
 // ------------12번------------
