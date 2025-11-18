@@ -7,46 +7,47 @@
     <link rel="stylesheet" href="../css/exam.css" />
   </head>
   <body>
-    <div id="info">
-      <h3>크기, 색상, 내용, 위치 지정해서 등록하기(시험대비)</h3>
-      <div>
-        <label for="">너비</label>
-        <input type="text" id="width" />
-      </div>
-      <div>
-        <label for="">높이</label>
-        <input type="text" id="height" />
-      </div>
-      <div>
-        <label for="">배경색</label>
-        <input type="text" id="backgroundColor" />
-      </div>
-      <div>
-        <label for="">글자색</label>
-        <input type="text" id="color" />
-      </div>
-
-      <div>
-        <label for="">글자 크기</label>
-        <input type="number" id="fontSize" />
-      </div>
-      <div>
-        <label for="">내용</label>
-        <input type="text" id="content" />
-      </div>
-      <div id="radioItem">
-        <div><input type="radio" name="position" value="left" /> 왼쪽</div>
+    <div id="container">
+      <div id="info">
+        <h3><u>크기, 색상, 내용, 위치 지정해서 등록하기(시험대비)</u></h3>
         <div>
-          <input type="radio" name="position" value="center" />
-          가운데
+          <label for="">너비</label>
+          <input type="text" id="width" />
         </div>
         <div>
-          <input type="radio" name="position" value="right" />
-          오른쪽
+          <label for="">높이</label>
+          <input type="text" id="height" />
         </div>
-      </div>
+        <div>
+          <label for="">배경색</label>
+          <input type="text" id="backgroundColor" />
+        </div>
+        <div>
+          <label for="">글자색</label>
+          <input type="text" id="color" />
+        </div>
 
-      <button type="button" id="btn">적용</button>
+        <div>
+          <label for="">글자 크기</label>
+          <input type="number" id="fontSize" />
+        </div>
+        <div>
+          <label for="">내용</label>
+          <input type="text" id="content" />
+        </div>
+        <div id="radioItem">
+          <div><input type="radio" name="position" value="left" /> 왼쪽</div>
+          <div>
+            <input type="radio" name="position" value="center" />
+            가운데
+          </div>
+          <div>
+            <input type="radio" name="position" value="right" />
+            오른쪽
+          </div>
+        </div>
+        <button type="button" id="btn">적용</button>
+      </div>
       <div id="addItem" class="items"></div>
     </div>
 
