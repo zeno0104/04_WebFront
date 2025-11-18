@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/exam.css" />
+  </head>
+  <body>
+    <h2>크기, 색상, 내용, 위치 지정해서 등록하기(시험대비)</h2>
+    <div id="info">
+      <div>
+        <label for="">너비</label>
+        <input type="text" id="width" />
+      </div>
+      <div>
+        <label for="">높이</label>
+        <input type="text" id="height" />
+      </div>
+      <div>
+        <label for="">배경색</label>
+        <input type="text" id="backgroundColor" />
+      </div>
+      <div>
+        <label for="">글자색</label>
+        <input type="text" id="color" />
+      </div>
+
+      <div>
+        <label for="">글자 크기</label>
+        <input type="number" id="fontSize" />
+      </div>
+      <div>
+        <label for="">내용</label>
+        <input type="text" id="content" />
+      </div>
+      <div id="radioItem">
+        <div><input type="radio" name="position" value="left" /> 왼쪽</div>
+        <div>
+          <input type="radio" name="position" value="center" />
+          가운데
+        </div>
+        <div>
+          <input type="radio" name="position" value="right" />
+          오른쪽
+        </div>
+      </div>
+
+      <button type="button" id="btn">적용</button>
+      <div id="addItem" class="items"></div>
+    </div>
+
+    <script src="../js/exam.js"></script>
+  </body>
+</html>

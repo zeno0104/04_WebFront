@@ -1,0 +1,49 @@
+#info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 50px;
+  gap: 10px;
+}
+#info > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#info > div > label {
+  font-size: 20px;
+  font-weight: bold;
+}
+#info > div > input {
+  width: 200px;
+  border-radius: 10px;
+  border: 1px solid #747272;
+  padding: 10px;
+  font-size: 15px;
+}
+#info > div {
+  display: flex;
+  justify-content: space-between;
+}
+#btn {
+  background: none;
+  border: none;
+  background-color: #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+#btn:hover {
+  background-color: #575555;
+  color: white;
+}
+#radioItem {
+  display: flex;
+  justify-content: space-around;
+  /* flex-direction: row; */
+}
+#addItem {
+  display: flex;
+  flex-direction: column;
+}
