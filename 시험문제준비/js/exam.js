@@ -20,5 +20,6 @@ btn.addEventListener("click", () => {
   p.style.textAlign = position.value;
   p.style.fontSize = fontSize.value + "px";
   p.innerText = content.value;
+
   addItem.append(p);
 });
